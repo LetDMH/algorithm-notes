@@ -5,7 +5,7 @@
  * @description 使用对象存储栈元素
  */
 export class Stack {
-  // 当前下标索引
+  // 下一个元素的索引
   count = 0
   // 元素集合
   items = {}
@@ -47,11 +47,12 @@ export class Stack {
     return this.count
   }
 
+  // 打印所有元素
   toString() {
     if (this.isEmpty()) return ""
     let objString = ""
     for (let i = 0; i < this.count; i++) {
-      objString = `${objString},${this.count[i]}`
+      objString = `${objString},${this.items[i]}`
     }
     return objString
   }
