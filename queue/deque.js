@@ -1,7 +1,7 @@
 // 双端队列（deque，或称 double-ended queue）是一种允许我们同时从前端和后端添加和移除
 // 元素的特殊队列。
 
-class Deque {
+export default class Deque {
   // 下一个元素的索引
   count = 0
   // 第一个元素的索引
@@ -88,7 +88,7 @@ class Deque {
   // 如果队列中不包含任何元素，返回 true，否则返回 false
   isEmpty() {
     // return this.count - this.lowestCount === 0
-    return tthis.size() === 0
+    return this.size() === 0
   }
 
   // 返回队列包含的元素个数，与数组的 length 属性类似

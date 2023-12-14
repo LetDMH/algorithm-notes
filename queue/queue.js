@@ -1,7 +1,7 @@
 // 队列是遵循先进先出（FIFO，也称为先来先服务）原则的一组有序的项。队列在尾部添加新
 // 元素，并从顶部移除元素。最新添加的元素必须排在队列的末尾。
 
-class Queue {
+export default class Queue {
   // 下一个元素的索引
   count = 0
   // 第一个元素的索引
@@ -35,7 +35,7 @@ class Queue {
   // 如果队列中不包含任何元素，返回 true，否则返回 false
   isEmpty() {
     // return this.count - this.lowestCount === 0
-    return tthis.size() === 0
+    return this.size() === 0
   }
 
   // 返回队列包含的元素个数，与数组的 length 属性类似
