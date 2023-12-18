@@ -53,8 +53,8 @@ export default class Deque {
   }
 
   // 法在双端队列后端添加新的元素（实现方法和 Queue 类中的enqueue 方法相同）
-  addBack() {
-    this.enqueue()
+  addBack(element) {
+    this.enqueue(element)
   }
 
   // 从双端队列后端移除第一个元素（实现方法和 Stack 类中的pop 方法一样）
